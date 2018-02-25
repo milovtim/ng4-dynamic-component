@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { DynComponent } from './dyn/dyn.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  entryComponents:[DynComponent],
+  declarations: [AppComponent, DynComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
